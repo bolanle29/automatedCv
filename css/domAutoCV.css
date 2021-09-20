@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: brown; */
+}
+
+body{
+ margin: 15px;
+ padding: 20px;
+ color: cadetblue;
+  
+}
+
+.header{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.personalInfo{
+    margin-bottom: 50px; 
+   
+}
+
+
+/* educational details */
+.Education{
+    margin-bottom:28px ;
+}
+.Edu{
+
+    margin-bottom: 20px;
+    margin-top: 10px; 
+    font-weight: bolder;
+    /* color: brown; */
+}
+
+.Education h4{
+    margin-bottom: 8px; 
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+/* Skills */
+.skills{
+    margin-top: 20px; 
+    margin-bottom: 13px;
+    
+}
+
+.skills h2{
+    margin-bottom: 8px;
+}
+
+.Work-Experience{
+    margin-top: 20px; 
+    margin-bottom: 13px;
+}
+
+.Exp{
+    margin-bottom: 15px;  
+}
+
+.pInfo{
+    margin-top: 20px; 
+    margin-bottom: 13px; 
+}
+
+.Info{
+    margin-bottom: 15px;  
+}
+
+.Certifications{
+    margin-top: 20px; 
+    margin-bottom: 13px  
+}
+
+.certs{
+    margin-bottom: 15px;   
+}
+
+.reference{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.btn{
+    margin-top: 20px;   
+    padding: 10px 20px;
+    border: none;
+    color: cadetblue;
+    font-size: 17px;
+    font-weight: bolder;
+}
