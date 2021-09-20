@@ -10,6 +10,8 @@ function submitBtn(){
 
     // Output for personal data
     document.querySelector(".name").innerHTML = Usname;
+    console.log("Usname")
+    
     document.querySelector(".e-mail").innerHTML = email;
     document.querySelector(".contactAdd").innerHTML = address;
     document.querySelector(".careerProfile").innerHTML = Profile;
