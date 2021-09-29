@@ -1,14 +1,16 @@
+// alert("lov")
 const inputBtn = document.querySelector(".btn");
 
 function submitBtn(){
 
-    // Input for personal data
+
+//     // Input for personal data
     let Usname = document.getElementById("Uname").value;
     let email = document.getElementById("mail").value;
     let address = document.getElementById("address").value;
     let Profile = document.getElementById("Profile").value;
 
-    // Output for personal data
+//     // Output for personal data
     document.querySelector(".name").innerHTML = Usname;
     console.log("Usname")
     
@@ -17,16 +19,12 @@ function submitBtn(){
     document.querySelector(".careerProfile").innerHTML = Profile;
 
 
-    //Input for Certification and Achievement
-    let UserCertification = document.getElementById("cert").value;
-    //Output for Certification and Achievement
-    document.querySelector(".certification").innerHTML = UserCertification;
-
-    
     //Input for Education (Secondary School)
     let userSecSchool = document.getElementById("secSchl").value;
+    let usergraduation = document.getElementById("graduation").value
     //Output for Education (Secondary School)  
     document.querySelector(".sec").innerHTML = userSecSchool;
+    document.querySelector(".secgrad1").innerHTML = usergraduation
 
 
    //Input for Education (degree)
@@ -73,17 +71,99 @@ function submitBtn(){
    document.querySelector(".class4").innerHTML = classOfDeg4;
 
 
+
+
+    //Input for  Achievement
+    let UserAchievement = document.getElementById("achie").value;
+    //Output for Achievement
+    document.querySelector(".achieve").innerHTML = UserAchievement;
+
+}   
+
+//    //  //Input for Certification 
+   
+     function certificationButton(){
+        let userInput = prompt("Enter the number of certification you have");
+        for (let i=0; i<userInput; i++){
+           let i=0;
+           let CertificationEntry =  document.getElementById("certBtn");
+           let certInput = document.createElement("input");
+           certInput.setAttribute("type","text"); 
+           certInput.setAttribute("id", "certification"+(i++));
+           CertificationEntry.appendChild(certInput);
+        }
+     }
+document.getElementById("certificationEntryButton").addEventListener("click",certificationButton);
+    
+    
 // Input for skill
-   let Userskill = document.getElementById("skill").value;  
-//    Output for skill
-   document.querySelector(".skill-set").innerHTML = Userskill;
 
-
-   // Input for Job experiences
-   let UserWorkexperience = document.getElementById("skill").value;  
-   //    Output for Job experiences
-   document.querySelector(".experience").innerHTML = UserWorkexperience;
-
+function UserSkillButton(){
+   let userInputSkil = prompt("Enter the number of Skills");
+   for (let i=0; i<userInputSkil; i++){
+      let i=0;
+      let SkillsEntry =  document.getElementById("skillBtn");
+      let skillsInput = document.createElement("input");
+      skillsInput.setAttribute("type","text"); 
+      skillsInput.setAttribute("id", "uSkill"+(i++));
+      SkillsEntry.appendChild(skillsInput );
+  
+   }
 }
 
-inputBtn.addEventListener('click', submitBtn);
+document.getElementById("skillsEntryButton").addEventListener("click",UserSkillButton);
+
+
+// // //    let skillSet1 = document.getElementById("skillId1").value; 
+// // //    let skillSet2 = document.getElementById("skillId2").value;
+// // //    let skillSet3 = document.getElementById("skillId3").value;
+// // //    let skillSet4 = document.getElementById("skillId4").value;
+// // //    let skillSet5 = document.getElementById("skillId5").value;
+// // //    let skillSet6 = document.getElementById("skillId6").value;
+// // //    let skillSet7 = document.getElementById("skillId7").value; 
+// // // //    Output for skill
+// // //    document.querySelector(".skill1").innerHTML = skillSet1;
+// // //    document.querySelector(".skill2").innerHTML = skillSet2;
+// // //    document.querySelector(".skill3").innerHTML = skillSet3;
+// // //    document.querySelector(".skill4").innerHTML = skillSet4;
+// // //    document.querySelector(".skill5").innerHTML = skillSet5;
+// // //    document.querySelector(".skill6").innerHTML = skillSet6;
+// // //    document.querySelector(".skill7").innerHTML = skillSet7;
+
+    // Input for Job experiences
+
+   function UserExperienceButton(){
+      // alert("lov")
+      let userInputexperiences = prompt("Enter the number of Skills");
+      for (let i=0; i<userInputexperiences; i++){
+         let i=0;
+         let experienceEntry =  document.getElementById("jobsBtn");
+         let experienceInput = document.createElement("input");
+         experienceInput.setAttribute("type","text"); 
+         experienceInput.setAttribute("id", "JobExperience"+(i++));
+         experienceEntry.appendChild(experienceInput );
+      }
+   }
+   document.getElementById("jobsEntryButton").addEventListener("click",UserExperienceButton);
+
+
+   //    // let UserWorkexperience1 = document.getElementById("expId1").value; 
+//    // let UserWorkexperience2 = document.getElementById("expId2").value;
+//    // let UserWorkexperience3 = document.getElementById("expId3").value; 
+//    // let UserWorkexperience4 = document.getElementById("expId4").value;
+//    // let UserWorkexperience5 = document.getElementById("expId5").value;
+//    // let UserWorkexperience6 = document.getElementById("expId6").value;
+//    // let UserWorkexperience7 = document.getElementById("expId7").value;
+//    // //    Output for Job experiences
+//    // document.querySelector(".job1").innerHTML = UserWorkexperience1;
+//    // document.querySelector(".job2").innerHTML = UserWorkexperience2;
+//    // document.querySelector(".job3").innerHTML = UserWorkexperience3;
+//    // document.querySelector(".job4").innerHTML = UserWorkexperience4;
+//    // document.querySelector(".job5").innerHTML = UserWorkexperience5;
+//    // document.querySelector(".job6").innerHTML = UserWorkexperience6;
+//    // document.querySelector(".job7").innerHTML = UserWorkexperience7;
+
+
+   
+
+ inputBtn.addEventListener('click', submitBtn);

@@ -2,14 +2,28 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* background-color: brown; */
 }
+
+
 
 body{
  margin: 15px;
  padding: 20px;
  color: cadetblue;
+ background-color: #0a2e50;
   
+}
+
+.wrapper{
+    width: 800px;
+    height: auto;
+    position: relative;
+    left: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(37, 37, 37);
+    
 }
 
 .header{
@@ -19,8 +33,23 @@ body{
 }
 
 .personalInfo{
-    margin-bottom: 50px; 
-   
+    margin-bottom: 50px;   
+}
+
+#Profile{
+    font-size: 22px;
+}
+
+
+/* Certification Section */
+.crt{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#certificationEntryButton{
+    padding: 10px;
+    font-size: 17px  
 }
 
 
@@ -33,7 +62,7 @@ body{
     margin-bottom: 20px;
     margin-top: 10px; 
     font-weight: bolder;
-    /* color: brown; */
+    
 }
 
 .Education h4{
@@ -42,18 +71,48 @@ body{
     font-weight: bolder;
 }
 
-/* Skills */
-.skills{
-    margin-top: 20px; 
-    margin-bottom: 13px;
-    
+/* Skills section */
+
+.skl{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+#skillsEntryButton{
+    padding: 10px;
+    font-size: 17px; 
+    margin-bottom: 10px; 
+}
+
+#skillBtn{
+padding: 12px;
+}
+/* .skills{
+    margin-top: 20px; 
+    margin-bottom: 13px; 
+}
 .skills h2{
     margin-bottom: 8px;
 }
+.ss{
+    margin-bottom: 5px;
+    padding: 10px 50px;
+    font-size: 18px;
+} */
 
-.Work-Experience{
+
+/* job experience section */
+
+.Exp{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#jobsEntryButton{
+    padding: 10px;
+     font-size: 17px;
+     margin-bottom: 10px;
+}
+/* .Work-Experience{
     margin-top: 20px; 
     margin-bottom: 13px;
 }
@@ -61,6 +120,12 @@ body{
 .Exp{
     margin-bottom: 15px;  
 }
+
+.job{
+    margin-bottom: 5px;
+    padding: 10px 50px;
+    font-size: 18px;   
+} */
 
 .pInfo{
     margin-top: 20px; 
@@ -71,20 +136,42 @@ body{
     margin-bottom: 15px;  
 }
 
-.Certifications{
+
+/* Achievements section */
+.Achievements{
     margin-top: 20px; 
     margin-bottom: 13px  
 }
 
-.certs{
+.Ach{
     margin-bottom: 15px;   
 }
 
+
+/* certification section */
+ .certificates{
+    margin-top: 20px; 
+    margin-bottom: 13px;
+} 
+/* .crt{
+    /* margin-bottom: 8px; */
+ 
+.ct{
+    margin-bottom: 15px;
+    padding: 10px 50px;
+    font-size: 18px;  
+}
+
+
+
+/* reference section */
 .reference{
     font-size: 25px;
     font-weight: bolder;
 }
 
+
+/* submit button */
 .btn{
     margin-top: 20px;   
     padding: 10px 20px;
@@ -92,4 +179,72 @@ body{
     color: cadetblue;
     font-size: 17px;
     font-weight: bolder;
+    cursor: pointer;
+
+}
+
+
+
+@media screen and (max-width: 800px){
+.body{
+  width: auto;  
+}
+
+.wrapper{
+    width: 50%;
+}
+
+textarea{
+    width: 400px;
+    color: hotpink;
+}
+
+.inp{
+    margin-bottom: 14px;
+}
+
+.ss{
+    margin-bottom: 17px;
+    padding: 10px 12px;
+    list-style: lower-greek;
+}
+
+.job{
+    margin-bottom: 17px;
+    padding: 10px 12px;
+    list-style: lower-greek;  
+}
+.ct{
+    margin-bottom: 17px;
+    padding: 10px 12px;
+    list-style: lower-greek;   
+}
+}
+
+@media screen and (max-width: 600px){
+   .header{
+       font-size: 28px;
+   }
+   
+   .wrapper{
+       color: #0a2e50;
+       width: 60%;
+   }
+   .btn{
+       color: #fff;
+       background-color: #0a2e50;
+   }
+
+   @media screen and (max-width: 400px){
+       .wrapper{
+           font-size: 25px;
+           /* justify-content: center; */
+           align-items: center;
+           width: 100%;
+       }
+
+       .header{
+        font-size: 30px;
+    }
+   }
 }

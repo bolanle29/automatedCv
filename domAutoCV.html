@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="js/domAutoCV.js">
+    <!-- <link rel="stylesheet" href="js/domAutoCV.js"> -->
     <link rel="stylesheet" href="css/domAutoCV.css">
 
 </head>
@@ -19,32 +19,48 @@
            <input type="text" id="Uname"   placeholder="Enter Full Name" required style="padding: 10px; font-size: 18px; color: #000;">
     </h1>
       <br><br>
-   
     <h3 class="e-mail">
            <input type="text"  id="mail" placeholder="Enter E-mail address" required  style="padding: 10px; font-size: 18px; color: #000;" > 
            <br><br>
-    </h3>
-   
+    </h3>  
       <p class="contactAdd">
-          <textarea name="" id="address" cols="67" rows="4" placeholder="Enter address" required style="font-size:20px ; padding: 10px;" ></textarea>
+          <textarea name="" id="address" placeholder="Enter address" required style="font-size:20px ; padding: 10px; width: 270px;" ></textarea>
     </p>
     <br><br>
         <label for="Profile" style="font-size: 23px; font-weight: bolder;margin-bottom: 15px;">Profile Statement:</label>
     <p class="careerProfile">
-        <textarea name="" id="Profile" cols="90" rows="4" required style="margin-bottom: 10px; padding: 10px;"></textarea>
+        <textarea name=""  id="Profile" required style="margin-bottom: 10px; padding: 10px; width: 270px;"></textarea>
     </p>
     <hr>
  
 </div>
 
 <!-- Certification -->
-<div class="Certifications">
-         <h2 class="certs">Certification & Achievements:</h2>
-    <p class="certification">
-         <textarea id="cert" style="width: 50%; height: 90px; font-size: 20px; padding: 15px" ></textarea>
+<div class="Achievements">
+         <h2 class="Ach">Achievements:</h2>
+    <p class="achieve">
+         <textarea id="achie" style="width: 50%; height: 90px; font-size: 20px; padding: 15px" ></textarea>
    </p>
 </div>
 <hr>
+<div class="certs">
+    <h2 class="crt">Certification:</h2>
+     <button id= "certificationEntryButton" >Enter number of certification</button>
+     <h1 id="certBtn" style="width: 20px; margin-bottom: 10px; "></h1>
+    <!-- <p class="certificates">
+        <li  ><input type="text" class="ct" placeholder="Enter Certification" id="cert"></li>
+        <li  ><input type="text" class="ct" placeholder="Enter Certification" id="cert"></li>
+        <li ><input type="text" class="ct" placeholder="Enter Certification" id="cert"></li>
+        <li ><input type="text" class="ct" placeholder="Enter Certification" id="cert"></li>
+        <li ><input type="text" class="ct" placeholder="Enter Certification" id="cert"></li>
+        <li ><input type="text" class="ct" placeholder="Enter Certification" id="cert"></li>
+        <li ><input type="text" class="ct" placeholder="Enter Certification" id="cert"></li>
+     <textarea id="skill" style="width: 50%; height: 90px; font-size: 20px; padding: 15px" ></textarea> 
+    </p>
+</div> -->
+<hr>
+
+
 
 <!-- Educational History and info -->
 <div class="Education">
@@ -52,41 +68,41 @@
 
        <h4>Secondary School:</h4>
 
-           <span class="sec"><input type="text" id="secSchl" placeholder="Name of Institution" required style="padding: 10px; font-size: 18px; color: #000;"></span>
-           <span class="secgrad1"><input type="month" id="graduation" placeholder="Year of graduation" required style="padding: 10px; font-size: 18px; color: #000;"></span>
+           <span class="sec"><input type="text" class="inp" id="secSchl" placeholder="Name of Institution" required style="padding: 10px; font-size: 18px; color: #000;"></span>
+           <span class="secgrad1"><input type="month" class="inp" id="graduation" placeholder="Year of graduation" required style="padding: 10px; font-size: 18px; color: #000;"></span>
 
        <h4>Degree:</h4>
 
-           <span class="uni1"><input type="text" id="inst1" placeholder="Name of Institution" required style="padding: 10px; font-size: 18px; color: #000;"></span>
-           <span class="grad1"><input type="month" id="gra1" placeholder="Year of graduation" required style="padding: 10px; font-size: 18px; color: #000;"></span>
+           <span class="uni1"><input type="text" class="inp"  id="inst1" placeholder="Name of Institution" required style="padding: 10px; font-size: 18px; color: #000;"></span>
+           <span class="grad1"><input type="month" class="inp" id="gra1" placeholder="Year of graduation" required style="padding: 10px; font-size: 18px; color: #000;"></span>
         <br><br>
-           <span class="degree1"><input type="text" id="deg1" placeholder="Degree type" required style="padding: 10px; font-size: 18px; color: #000;"></span>
-            <span class="class1"><input type="text" id="cl1" placeholder="Class of degree" required style="padding: 10px; font-size: 18px; color: #000;"></span>
+           <span class="degree1"><input type="text" class="inp" id="deg1" placeholder="Degree type" required style="padding: 10px; font-size: 18px; color: #000;"></span>
+            <span class="class1"><input type="text" class="inp" id="cl1" placeholder="Class of degree" required style="padding: 10px; font-size: 18px; color: #000;"></span>
 
 <h4>Other Degrees, If any:</h4>
 
 <!-- Higher degree 1 -->
-         <span class="uni2"><input type="text" id="inst2" placeholder="Name of Institution" style="padding: 10px; font-size: 18px; color: #000;"></span>
-        <span class="grad2"><input type="month"  id="gra2" placeholder="Year of graduation" style="padding: 10px; font-size: 18px; color: #000;"></span>
+         <span class="uni2"><input type="text" class="inp" id="inst2" placeholder="Name of Institution" style="padding: 10px; font-size: 18px; color: #000;"></span>
+        <span class="grad2"><input type="month" class="inp"  id="gra2" placeholder="Year of graduation" style="padding: 10px; font-size: 18px; color: #000;"></span>
 <br><br>
-        <span class="degree2"><input type="text" id="deg2"placeholder="Degree type" style="padding: 10px; font-size: 18px; color: #000;"></span>
-        <span class="class2"><input type="text" id="cl2" placeholder="Class of degree" style="padding: 10px; font-size: 18px; color: #000;"></span>
+        <span class="degree2"><input type="text" class="inp" id="deg2"placeholder="Degree type" style="padding: 10px; font-size: 18px; color: #000;"></span>
+        <span class="class2"><input type="text"  class="inp" id="cl2" placeholder="Class of degree" style="padding: 10px; font-size: 18px; color: #000;"></span>
 <br><br><br>
 
 <!-- Higher degree 2 -->
-        <span class="uni3"><input type="text" id="inst3" placeholder="Name of Institution" style="padding: 10px; font-size: 18px; color: #000;"></span>
-        <span class="grad3"><input type="month"  id="gra3" placeholder="Year of graduation" style="padding: 10px; font-size: 18px; color: #000;"></span>
+        <span class="uni3"><input type="text" class="inp" id="inst3" placeholder="Name of Institution" style="padding: 10px; font-size: 18px; color: #000;"></span>
+        <span class="grad3"><input type="month" class="inp" id="gra3" placeholder="Year of graduation" style="padding: 10px; font-size: 18px; color: #000;"></span>
 <br><br>
-        <span class="degree3"><input type="text" id="deg3"placeholder="Degree type" style="padding: 10px; font-size: 18px; color: #000;"></span>
-        <span class="class3"><input type="text" id="cl3" placeholder="Class of degree" style="padding: 10px; font-size: 18px; color: #000;"></span>
+        <span class="degree3"><input type="text" class="inp" id="deg3"placeholder="Degree type" style="padding: 10px; font-size: 18px; color: #000;"></span>
+        <span class="class3"><input type="text" class="inp" id="cl3" placeholder="Class of degree" style="padding: 10px; font-size: 18px; color: #000;"></span>
 <br><br><br>
 
 <!--Higher degree 3 -->
-         <span class="uni4"><input type="text" id="inst4" placeholder="Name of Institution" style="padding: 10px; font-size: 18px; color: #000;"></span>
-         <span class="grad4"><input type="month"  id="gra4" placeholder="Year of graduation" style="padding: 10px; font-size: 18px; color: #000;"></span>
+         <span class="uni4"><input type="text" class="inp" id="inst4" placeholder="Name of Institution" style="padding: 10px; font-size: 18px; color: #000;"></span>
+         <span class="grad4"><input type="month" class="inp" id="gra4" placeholder="Year of graduation" style="padding: 10px; font-size: 18px; color: #000;"></span>
 <br><br>
-         <span class="degree4"><input type="text" id="deg4"placeholder="Degree type" style="padding: 10px; font-size: 18px; color: #000;"></span>
-        <span class="class4"><input type="text" id="cl4" placeholder="Class of degree" style="padding: 10px; font-size: 18px; color: #000;"></span>
+         <span class="degree4"><input type="text" class="inp" id="deg4"placeholder="Degree type" style="padding: 10px; font-size: 18px; color: #000;"></span>
+        <span class="class4"><input type="text" class="inp" id="cl4" placeholder="Class of degree" style="padding: 10px; font-size: 18px; color: #000;"></span>
 <br><br><br>
 </div>
 <hr>
@@ -94,10 +110,20 @@
 <!-- skills -->
 <div class="skills">
     <h2 class="skl">Skills:</h2>
+
+    <button id= "skillsEntryButton">Click & Enter the Number of Skills you have </button>
+    <h1 class="uSkill" id="skillBtn" style="width: 20px; margin-bottom: 2px; padding: 12px; font-size: 22px" ></h1>
     
-    <p class="skill-set">
-       <textarea id="skill" style="width: 50%; height: 90px; font-size: 20px; padding: 15px" ></textarea>
-    </p>
+    <!-- <p class="skill-set">
+        <li class="skill1" ><input type="text" class="ss" placeholder="Enter skill" id="skillId1"></li>
+        <li class="skill2" ><input type="text" class="ss" placeholder="Enter skill" id="skillId2"></li>
+        <li class="skill3" ><input type="text" class="ss" placeholder="Enter skill" id="skillId3"></li>
+        <li class="skill4" ><input type="text" class="ss" placeholder="Enter skill" id="skillId4"></li>
+        <li class="skill5" ><input type="text" class="ss" placeholder="Enter skill" id="skillId5"></li>
+        <li class="skill6" ><input type="text" class="ss" placeholder="Enter skill" id="skillId6"></li>
+        <li class="skill7" ><input type="text" class="ss" placeholder="Enter skill" id="skillId7"></li>
+        <textarea id="skill" style="width: 50%; height: 90px; font-size: 20px; padding: 15px" ></textarea> 
+     </p> -->
 </div>
 <hr>
 
@@ -105,14 +131,27 @@
 <div class="Work-Experience">
 
     <h2 class="Exp">Experience:</h2>
-    <p class="job-exp">
-       <textarea id="experience" style="width: 50%; height: 90px; font-size: 20px; padding: 15px" ></textarea>
-   </p>
+
+    <button id= "jobsEntryButton" >Click & Enter the Number of Experiences </button>
+    <h1 id="jobsBtn" style="width: 20px; margin-bottom: 10px;"></h1>
+    <!-- <p class="job-exp">
+        <li class="job1" ><input type="text" class="job" placeholder="Enter Job Experience" id="expId1"></li>
+        <li class="job2" ><input type="text" class="job" placeholder="Enter Job Experience" id="expId2"></li>
+        <li class="job3" ><input type="text" class="job" placeholder="Enter Job Experience" id="expId3"></li>
+        <li class="job4" ><input type="text" class="job" placeholder="Enter Job Experience" id="expId4"></li>
+        <li class="job5" ><input type="text" class="job" placeholder="Enter Job Experience" id="expId5"></li>
+        <li class="job6" ><input type="text" class="job" placeholder="Enter Job Experience" id="expId6"></li>
+        <li class="job7" ><input type="text" class="job" placeholder="Enter Job Experience" id="expId7"></li>
+
+        <textarea id="experience" style="width: 50%; height: 90px; font-size: 20px; padding: 15px" ></textarea>
+   </p> -->
 </div>
 <hr>
    <p class="reference">Referee will be available on request</p>
 
    <button class="btn">Submit</button>
+
+   <script src="js/domAutoCV.js"></script>
 </div>
 </body>
 </html>
