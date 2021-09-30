@@ -3,6 +3,28 @@ const inputBtn = document.querySelector(".btn");
 
 function submitBtn(){
 
+   // certification Output
+let kk = document.getElementById("certification0").value;
+// console.log(kk)
+document.querySelector("#certBtn").innerHTML = kk;
+document.getElementById("certificationEntryButton").style.display = "none"
+
+//  Skills Output
+let ss = document.getElementById("uSkill0").value;
+// console.log (ss)
+document.querySelector("#sklButton").innerHTML = ss;
+document.getElementById("skillsEntryButton").style.display = "none"
+
+// job Experience Output
+let ee = document.getElementById("JobExperience0").value;
+// console.log (ee)
+document.querySelector("#expButton").innerHTML = ee;
+document.getElementById("jobsEntryButton").style.display = "none"
+
+
+
+
+
 
 //     // Input for personal data
     let Usname = document.getElementById("Uname").value;
@@ -78,10 +100,10 @@ function submitBtn(){
     //Output for Achievement
     document.querySelector(".achieve").innerHTML = UserAchievement;
 
-}   
+}
+inputBtn.addEventListener('click', submitBtn);
 
-//    //  //Input for Certification 
-   
+//    //  //Input for Certification   
      function certificationButton(){
         let userInput = prompt("Enter the number of certification you have");
         for (let i=0; i<userInput; i++){
@@ -90,6 +112,7 @@ function submitBtn(){
            let certInput = document.createElement("input");
            certInput.setAttribute("type","text"); 
            certInput.setAttribute("id", "certification"+(i++));
+           certInput.setAttribute("class","certification")
            CertificationEntry.appendChild(certInput);
         }
      }
@@ -97,50 +120,36 @@ document.getElementById("certificationEntryButton").addEventListener("click",cer
     
     
 // Input for skill
-
 function UserSkillButton(){
    let userInputSkil = prompt("Enter the number of Skills");
    for (let i=0; i<userInputSkil; i++){
       let i=0;
-      let SkillsEntry =  document.getElementById("skillBtn");
+      let SkillsEntry =  document.getElementById("sklButton");
       let skillsInput = document.createElement("input");
       skillsInput.setAttribute("type","text"); 
       skillsInput.setAttribute("id", "uSkill"+(i++));
+      skillsInput.setAttribute("class", "uSkill" )
       SkillsEntry.appendChild(skillsInput );
   
    }
+
 }
 
 document.getElementById("skillsEntryButton").addEventListener("click",UserSkillButton);
 
 
-// // //    let skillSet1 = document.getElementById("skillId1").value; 
-// // //    let skillSet2 = document.getElementById("skillId2").value;
-// // //    let skillSet3 = document.getElementById("skillId3").value;
-// // //    let skillSet4 = document.getElementById("skillId4").value;
-// // //    let skillSet5 = document.getElementById("skillId5").value;
-// // //    let skillSet6 = document.getElementById("skillId6").value;
-// // //    let skillSet7 = document.getElementById("skillId7").value; 
-// // // //    Output for skill
-// // //    document.querySelector(".skill1").innerHTML = skillSet1;
-// // //    document.querySelector(".skill2").innerHTML = skillSet2;
-// // //    document.querySelector(".skill3").innerHTML = skillSet3;
-// // //    document.querySelector(".skill4").innerHTML = skillSet4;
-// // //    document.querySelector(".skill5").innerHTML = skillSet5;
-// // //    document.querySelector(".skill6").innerHTML = skillSet6;
-// // //    document.querySelector(".skill7").innerHTML = skillSet7;
-
     // Input for Job experiences
 
    function UserExperienceButton(){
       // alert("lov")
-      let userInputexperiences = prompt("Enter the number of Skills");
+      let userInputexperiences = prompt("Enter the number of job experience");
       for (let i=0; i<userInputexperiences; i++){
          let i=0;
-         let experienceEntry =  document.getElementById("jobsBtn");
+         let experienceEntry =  document.getElementById("expButton");
          let experienceInput = document.createElement("input");
          experienceInput.setAttribute("type","text"); 
          experienceInput.setAttribute("id", "JobExperience"+(i++));
+         experienceInput.setAttribute("class", "JobExperience" )
          experienceEntry.appendChild(experienceInput );
       }
    }
@@ -166,4 +175,4 @@ document.getElementById("skillsEntryButton").addEventListener("click",UserSkillB
 
    
 
- inputBtn.addEventListener('click', submitBtn);
+//  inputBtn.addEventListener('click', submitBtn);
